@@ -14,6 +14,9 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ZStack {
+                Image("bg")
+                    .resizable()
+                    .ignoresSafeArea()
                 VStack(){
                     ImageSlider()
                         .frame(height: 140)
@@ -26,6 +29,7 @@ struct HomeView: View {
                         SingleMenu(sourceImage: "ic_pembelian", title: "Pembelian")
                         SingleMenu(sourceImage: "ic_pembayaran", title: "Pembayaran")
                     }
+                    .padding(.top,10)
                     .padding(.horizontal,20)
                     Spacer()
                 }
@@ -64,7 +68,10 @@ struct HomeView: View {
                         Image(systemName: "bell.fill")
                         .foregroundColor(.white)
                         .onTapGesture {
-                            homeVM.isDrawerOpen.toggle()
+                            homeVM.showNotification.toggle()
+                        }
+                        .fullScreenCover(isPresented: $homeVM.showNotification){
+                            NotificationView()
                         }
                     }
                 }

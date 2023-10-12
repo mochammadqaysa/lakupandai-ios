@@ -12,5 +12,8 @@ class HomeViewModel : ObservableObject {
     @Published var isDrawerOpen: Bool = false
     @Published var showDrawer: Bool = false
     
+    
+    @Published var showNotification: Bool = false
+    
     var columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
 }
