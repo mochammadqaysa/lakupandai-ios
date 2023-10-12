@@ -13,6 +13,15 @@ class HomeViewModel : ObservableObject {
     @Published var showDrawer: Bool = false
     
     
+    @Published var showAktivasiRekeningBaru = false
+    @Published var showInformasiRekening = false
+    @Published var showSetorTunai = false
+    @Published var showTarikTunai = false
+    @Published var showTransfer = false
+    @Published var showPembelian = false
+    @Published var showPembayaran = false
+    
+    
     @Published var showNotification: Bool = false
     
     var columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]

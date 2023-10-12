@@ -30,4 +30,12 @@ class DrawerViewModel: ObservableObject {
         MenuContent(name: "Kotak Masuk", image: "ic_email"),
         MenuContent(name: "Printer Setting", image: "ic_bluetooth")
     ]
+    
+    @Published var showAktivasiRekeningBaru = false
+    @Published var showInformasiRekening = false
+    @Published var showSetorTunai = false
+    @Published var showTarikTunai = false
+    @Published var showTransfer = false
+    @Published var showPembelian = false
+    @Published var showPembayaran = false
 }

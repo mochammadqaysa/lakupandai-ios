@@ -11,6 +11,8 @@
 		1E0AFFD92AD8211F005ED146 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0AFFD82AD8211F005ED146 /* NotificationViewModel.swift */; };
 		1E0AFFDB2AD8230E005ED146 /* NotificationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0AFFDA2AD8230E005ED146 /* NotificationDetailView.swift */; };
 		1E0AFFDD2AD82321005ED146 /* NotificationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0AFFDC2AD82321005ED146 /* NotificationDetailViewModel.swift */; };
+		1E0AFFE02AD826E3005ED146 /* AktivasiRekeningBaruView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0AFFDF2AD826E3005ED146 /* AktivasiRekeningBaruView.swift */; };
+		1E0AFFE22AD826EF005ED146 /* AktivasiRekeningBaruViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0AFFE12AD826EF005ED146 /* AktivasiRekeningBaruViewModel.swift */; };
 		1E847AED2ACCF8280010CBAC /* lakupandaiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E847AEC2ACCF8280010CBAC /* lakupandaiApp.swift */; };
 		1E847AEF2ACCF8280010CBAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E847AEE2ACCF8280010CBAC /* ContentView.swift */; };
 		1E847AF12ACCF82B0010CBAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E847AF02ACCF82B0010CBAC /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		1E0AFFD82AD8211F005ED146 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		1E0AFFDA2AD8230E005ED146 /* NotificationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailView.swift; sourceTree = "<group>"; };
 		1E0AFFDC2AD82321005ED146 /* NotificationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailViewModel.swift; sourceTree = "<group>"; };
+		1E0AFFDF2AD826E3005ED146 /* AktivasiRekeningBaruView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AktivasiRekeningBaruView.swift; sourceTree = "<group>"; };
+		1E0AFFE12AD826EF005ED146 /* AktivasiRekeningBaruViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AktivasiRekeningBaruViewModel.swift; sourceTree = "<group>"; };
 		1E847AE92ACCF8280010CBAC /* lakupandai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lakupandai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E847AEC2ACCF8280010CBAC /* lakupandaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lakupandaiApp.swift; sourceTree = "<group>"; };
 		1E847AEE2ACCF8280010CBAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 				1E0AFFDC2AD82321005ED146 /* NotificationDetailViewModel.swift */,
 			);
 			path = Notification;
+			sourceTree = "<group>";
+		};
+		1E0AFFDE2AD826C3005ED146 /* AktivasiRekeningBaru */ = {
+			isa = PBXGroup;
+			children = (
+				1E0AFFDF2AD826E3005ED146 /* AktivasiRekeningBaruView.swift */,
+				1E0AFFE12AD826EF005ED146 /* AktivasiRekeningBaruViewModel.swift */,
+			);
+			path = AktivasiRekeningBaru;
 			sourceTree = "<group>";
 		};
 		1E847AE02ACCF8280010CBAC = {
@@ -138,6 +151,7 @@
 		1E847B062ACD15540010CBAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1E0AFFDE2AD826C3005ED146 /* AktivasiRekeningBaru */,
 				1E0AFFD52AD82103005ED146 /* Notification */,
 				1E847B0A2ACD160F0010CBAC /* Home */,
 				1E847B072ACD15820010CBAC /* Widgets */,
@@ -265,8 +279,10 @@
 				1E847AEF2ACCF8280010CBAC /* ContentView.swift in Sources */,
 				1E847B162ACE50290010CBAC /* UIScreen+Extension.swift in Sources */,
 				1E847AED2ACCF8280010CBAC /* lakupandaiApp.swift in Sources */,
+				1E0AFFE02AD826E3005ED146 /* AktivasiRekeningBaruView.swift in Sources */,
 				1E847B1C2ACEB3E20010CBAC /* Drawer.swift in Sources */,
 				1E0AFFDD2AD82321005ED146 /* NotificationDetailViewModel.swift in Sources */,
+				1E0AFFE22AD826EF005ED146 /* AktivasiRekeningBaruViewModel.swift in Sources */,
 				1E847B002ACD113C0010CBAC /* ConstantError.swift in Sources */,
 				1E847B052ACD11840010CBAC /* ApiService.swift in Sources */,
 				1E847B092ACD159F0010CBAC /* NavigationDrawer.swift in Sources */,
