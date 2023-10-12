@@ -22,6 +22,9 @@ struct HomeView: View {
                         .frame(height: 140)
                     LazyVGrid(columns: homeVM.columns) {
                         SingleMenu(sourceImage: "ic_buka_rekening_baru", title: "Aktivasi Rekening Baru")
+                            .onTapGesture {
+                                homeVM.showAktivasiRekeningBaru.toggle()
+                            }
                         SingleMenu(sourceImage: "ic_informasi_rekening", title: "Informasi Rekening")
                         SingleMenu(sourceImage: "ic_setor_tunai", title: "Setor Tunai")
                         SingleMenu(sourceImage: "ic_tarik_tunai", title: "Tarik Tunai")
@@ -35,15 +38,20 @@ struct HomeView: View {
                 }
                 NavigationDrawer(isOpen: homeVM.isDrawerOpen)
                     .background(.black.opacity(homeVM.isDrawerOpen ? 0.5 : 0))
+                
+//                    .simultaneousGesture(TapGesture().onEnded {
+//                        withAnimation {
+//                            homeVM.isDrawerOpen = false
+//                        }
+//                    })
                     .edgesIgnoringSafeArea(.bottom)
                 
             }
             
-            .simultaneousGesture(TapGesture().onEnded {
-                withAnimation {
-                    homeVM.isDrawerOpen = false
-                }
-            })
+            .fullScreenCover(isPresented: $homeVM.showAktivasiRekeningBaru) {
+                AktivasiRekeningBaruView()
+            }
+            
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .principal) {

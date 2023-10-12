@@ -12,7 +12,6 @@ struct Drawer: View {
     @ObservedObject var drawerVM = DrawerViewModel()
     var body: some View {
         VStack {
-            VStack{
                 ScrollView{
                     Image("ic_user_white")
                         .resizable()
@@ -28,29 +27,33 @@ struct Drawer: View {
                         .padding(.bottom)
                     VStack(alignment: .leading){
                         ForEach(drawerVM.items) { value in
-                            
                             SingleDrawerMenu(imageName: value.image, title: value.name) {
-//                                switch value.name {
-//                                
-//                                case "Aktivasi Rekening Baru" :
-//                                    
-//                                    break
-//                                case "Informasi Rekening" :
-//                                    
-//                                    break
-//                                case "Setor Tunai" :
-//                                    break
-//                                case "Tarik Tunai" :
-//                                    break
-//                                case "Transfer" :
-//                                    break
-//                                case "Pembelian" :
-//                                    break
-//                                case "Pembayaran" :
-//                                    break
-//                                default:
-//                                    <#code#>
-//                                }
+                                switch value.name {
+                                case "Aktivasi Rekening Baru" :
+                                    drawerVM.showAktivasiRekeningBaru.toggle()
+                                    break
+                                case "Informasi Rekening" :
+                                    drawerVM.showInformasiRekening.toggle()
+                                    break
+                                case "Setor Tunai" :
+                                    drawerVM.showSetorTunai.toggle()
+                                    break
+                                case "Tarik Tunai" :
+                                    drawerVM.showTarikTunai.toggle()
+                                    break
+                                case "Transfer" :
+                                    drawerVM.showTransfer.toggle()
+                                    break
+                                case "Pembelian" :
+                                    drawerVM.showPembelian.toggle()
+                                    break
+                                case "Pembayaran" :
+                                    drawerVM.showPembayaran.toggle()
+                                    break
+                                default:
+                                    drawerVM.showAktivasiRekeningBaru.toggle()
+                                    break
+                                }
                             }
                                 .padding(.bottom,10)
                         }
@@ -62,10 +65,12 @@ struct Drawer: View {
                             
                         }
                     }
+                    .fullScreenCover(isPresented: $drawerVM.showAktivasiRekeningBaru) {
+                        AktivasiRekeningBaruView()
+                    }
                     Spacer()
                 }
                 .scrollIndicators(.hidden)
-            }
         }
 //        .frame(width: 250)
         .padding(16)
@@ -90,7 +95,7 @@ struct SingleDrawerMenu: View{
         self.action = action
     }
     var body: some View{
-        Button(action: {}){
+        Button(action: self.action){
             HStack(spacing:20) {
                 Image(imageName)
                     .resizable()
