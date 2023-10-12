@@ -11,7 +11,8 @@ import SwiftUI
 struct lakupandaiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .preferredColorScheme(.light)
         }
     }
 }
