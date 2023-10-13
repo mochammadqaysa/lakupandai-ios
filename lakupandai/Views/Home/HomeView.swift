@@ -38,16 +38,14 @@ struct HomeView: View {
                 }
                 NavigationDrawer(isOpen: homeVM.isDrawerOpen)
                     .background(.black.opacity(homeVM.isDrawerOpen ? 0.5 : 0))
-                
-//                    .simultaneousGesture(TapGesture().onEnded {
-//                        withAnimation {
-//                            homeVM.isDrawerOpen = false
-//                        }
-//                    })
                     .edgesIgnoringSafeArea(.bottom)
                 
             }
-            
+            .gesture(TapGesture().onEnded {
+                withAnimation {
+                    homeVM.isDrawerOpen = false
+                }
+            })
             .fullScreenCover(isPresented: $homeVM.showAktivasiRekeningBaru) {
                 AktivasiRekeningBaruView()
             }

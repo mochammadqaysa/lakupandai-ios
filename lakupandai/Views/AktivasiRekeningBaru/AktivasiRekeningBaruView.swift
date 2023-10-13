@@ -10,19 +10,13 @@ import SwiftUI
 struct AktivasiRekeningBaruView: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var aktivasiRekeningBaruVM = AktivasiRekeningBaruViewModel()
     var body: some View {
         NavigationStack{
             ScrollView {
-                FormAktivasi()
+                formActivation
                     .padding()
-                VStack {
-                    TextField("No Telp", text: .constant(""))
-                    Divider()
-                        .background(.black)
-                        .tint(.black)
-                        .foregroundColor(.black)
-                }
-                .padding(.horizontal)
+                
             }.toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
                     HStack(spacing:20) {
@@ -43,6 +37,124 @@ struct AktivasiRekeningBaruView: View {
         .toolbarBackground(.visible, for: .navigationBar)
         }
     }
+    
+    var formActivation : some View {
+        return VStack{
+            Group {
+                VStack {
+                    TextField("Nomor Induk Kependudukan", text: $aktivasiRekeningBaruVM.nik)
+                    Divider()
+                        .background(.black)
+                        .tint(.black)
+                        .foregroundColor(.black)
+                }
+                .padding(.vertical)
+                VStack {
+                    TextField("Nama", text: $aktivasiRekeningBaruVM.namaDebitur)
+                    Divider()
+                        .background(.black)
+                        .tint(.black)
+                        .foregroundColor(.black)
+                }
+                .padding(.vertical)
+                VStack {
+                    TextField("Jenis Kelamin", text: $aktivasiRekeningBaruVM.jenisKelamin)
+                    Divider()
+                        .background(.black)
+                        .tint(.black)
+                        .foregroundColor(.black)
+                }
+                .padding(.vertical)
+                HStack(){
+                    VStack {
+                        TextField("Tempat Lahir", text: $aktivasiRekeningBaruVM.tempatLahir)
+                        Divider()
+                            .background(.black)
+                            .tint(.black)
+                            .foregroundColor(.black)
+                    }
+                    VStack {
+                        TextField("Tanggal Lahir", text: $aktivasiRekeningBaruVM.tanggalLahir)
+                        Divider()
+                            .background(.black)
+                            .tint(.black)
+                            .foregroundColor(.black)
+                    }
+                }
+                .padding(.vertical)
+                VStack {
+                    TextField("Kode Pekerjaan", text: $aktivasiRekeningBaruVM.kodePekerjaan)
+                    Divider()
+                        .background(.black)
+                        .tint(.black)
+                        .foregroundColor(.black)
+                }
+                .padding(.vertical)
+                VStack {
+                    TextField("Kota / Kabupaten", text: $aktivasiRekeningBaruVM.kotaKab)
+                    Divider()
+                        .background(.black)
+                        .tint(.black)
+                        .foregroundColor(.black)
+                }
+                .padding(.vertical)
+                HStack(){
+                    VStack {
+                        TextField("Kecamatan", text: $aktivasiRekeningBaruVM.kecamatan)
+                        Divider()
+                            .background(.black)
+                            .tint(.black)
+                            .foregroundColor(.black)
+                    }
+                    VStack {
+                        TextField("Kelurahan / Desa", text: $aktivasiRekeningBaruVM.kelurahanDes)
+                        Divider()
+                            .background(.black)
+                            .tint(.black)
+                            .foregroundColor(.black)
+                    }
+                }
+                .padding(.vertical)
+                VStack {
+                    TextField("Status Perkawinan", text: $aktivasiRekeningBaruVM.statusPerkawinan)
+                    Divider()
+                        .background(.black)
+                        .tint(.black)
+                        .foregroundColor(.black)
+                }
+                .padding(.vertical)
+                VStack {
+                    TextField("Nama Ibu Kandung", text: $aktivasiRekeningBaruVM.namaIbu)
+                    Divider()
+                        .background(.black)
+                        .tint(.black)
+                        .foregroundColor(.black)
+                }
+                .padding(.vertical)
+            }
+            Group {
+                VStack {
+                    TextField("Kode Pendidikan", text: $aktivasiRekeningBaruVM.kodePendidikan)
+                    Divider()
+                        .background(.black)
+                        .tint(.black)
+                        .foregroundColor(.black)
+                }
+                .padding(.vertical)
+                
+                VStack {
+                    TextField("No Telp", text: $aktivasiRekeningBaruVM.nomorTelp)
+                    Divider()
+                        .background(.black)
+                        .tint(.black)
+                        .foregroundColor(.black)
+                }
+                .padding(.vertical)
+            }
+            
+            
+        }
+    }
 }
 
 struct AktivasiRekeningBaruView_Previews: PreviewProvider {
@@ -52,121 +164,3 @@ struct AktivasiRekeningBaruView_Previews: PreviewProvider {
 }
 
 
-struct FormAktivasi: View {
-    @State var nik = ""
-    @State var namaDebitur = ""
-    @State var jenisKelamin = ""
-    @State var tempatLahir = ""
-    @State var tanggalLahir = ""
-    @State var kodePekerjaan = ""
-    @State var kotaKab = ""
-    @State var kecamatan = ""
-    @State var kelurahanDes = ""
-    @State var statusPerkawinan = ""
-    @State var namaIbu = ""
-    @State var kodePendidikan = ""
-    @State var nomor = ""
-    var body: some View{
-        VStack{
-            VStack {
-                TextField("Nomor Induk Kependudukan", text: $nik)
-                Divider()
-                    .background(.black)
-                    .tint(.black)
-                    .foregroundColor(.black)
-            }
-            .padding(.vertical)
-            VStack {
-                TextField("Nama", text: $namaDebitur)
-                Divider()
-                    .background(.black)
-                    .tint(.black)
-                    .foregroundColor(.black)
-            }
-            .padding(.vertical)
-            VStack {
-                TextField("Jenis Kelamin", text: $jenisKelamin)
-                Divider()
-                    .background(.black)
-                    .tint(.black)
-                    .foregroundColor(.black)
-            }
-            .padding(.vertical)
-            HStack(){
-                VStack {
-                    TextField("Tempat Lahir", text: $tempatLahir)
-                    Divider()
-                        .background(.black)
-                        .tint(.black)
-                        .foregroundColor(.black)
-                }
-                VStack {
-                    TextField("Tanggal Lahir", text: $tanggalLahir)
-                    Divider()
-                        .background(.black)
-                        .tint(.black)
-                        .foregroundColor(.black)
-                }
-            }
-            .padding(.vertical)
-            VStack {
-                TextField("Kode Pekerjaan", text: $kodePekerjaan)
-                Divider()
-                    .background(.black)
-                    .tint(.black)
-                    .foregroundColor(.black)
-            }
-            .padding(.vertical)
-            VStack {
-                TextField("Kota / Kabupaten", text: $kotaKab)
-                Divider()
-                    .background(.black)
-                    .tint(.black)
-                    .foregroundColor(.black)
-            }
-            .padding(.vertical)
-            HStack(){
-                VStack {
-                    TextField("Kecamatan", text: $kecamatan)
-                    Divider()
-                        .background(.black)
-                        .tint(.black)
-                        .foregroundColor(.black)
-                }
-                VStack {
-                    TextField("Kelurahan / Desa", text: $kelurahanDes)
-                    Divider()
-                        .background(.black)
-                        .tint(.black)
-                        .foregroundColor(.black)
-                }
-            }
-            .padding(.vertical)
-            VStack {
-                TextField("Status Perkawinan", text: $statusPerkawinan)
-                Divider()
-                    .background(.black)
-                    .tint(.black)
-                    .foregroundColor(.black)
-            }
-            .padding(.vertical)
-            VStack {
-                TextField("Nama Ibu Kandung", text: $namaIbu)
-                Divider()
-                    .background(.black)
-                    .tint(.black)
-                    .foregroundColor(.black)
-            }
-            .padding(.vertical)
-            VStack {
-                TextField("Kode Pendidikan", text: $kodePendidikan)
-                Divider()
-                    .background(.black)
-                    .tint(.black)
-                    .foregroundColor(.black)
-            }
-            .padding(.vertical)
-            
-        }
-    }
-}
