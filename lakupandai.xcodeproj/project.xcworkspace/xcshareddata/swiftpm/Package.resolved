@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "alerttoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elai950/AlertToast",
+      "state" : {
+        "revision" : "b39252eacd159904afd7d718bba0afabb87f2f2f",
+        "version" : "1.3.9"
+      }
+    },
+    {
+      "identity" : "multidatepicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/andersprenger/MultiDatePicker",
+      "state" : {
+        "branch" : "main",
+        "revision" : "709a1460c333b48f44e1167e19378c42cce927d7"
+      }
+    },
+    {
+      "identity" : "uiscrollview-infinitescroll",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pronebird/UIScrollView-InfiniteScroll",
+      "state" : {
+        "revision" : "ff0c2b0d0d83961f36df3dfb3e6ff6929ff46dd3",
+        "version" : "1.3.0"
+      }
+    }
+  ],
+  "version" : 2
+}

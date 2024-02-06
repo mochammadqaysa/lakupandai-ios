@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B7B945C0-6318-4F06-8517-FB92C35F6BB4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB36E39D-34EA-4BA8-A1F7-136B7EBC9D4B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lakupandai/Views/Pembayaran/HasilPembayaranView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "AB36E39D-34EA-4BA8-A1F7-136B7EBC9D4B - 3e6e765819ccf175"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "lakupandai.HasilPembayaranView.body.getter : some"
+                  moduleName = "lakupandai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/digitalamorekriyanesia/development/ios/newEra/lakupandai/lakupandai/Views/Pembayaran/HasilPembayaranView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "AB36E39D-34EA-4BA8-A1F7-136B7EBC9D4B - 7b57c07d865a0efb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbarBackground(_: SwiftUI.Visibility, for: SwiftUI.ToolbarPlacement...) -&gt; some&gt;&gt;.0 in lakupandai.HasilPembayaranView.body.getter : some"
+                  moduleName = "lakupandai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/digitalamorekriyanesia/development/ios/newEra/lakupandai/lakupandai/Views/Pembayaran/HasilPembayaranView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "872">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
