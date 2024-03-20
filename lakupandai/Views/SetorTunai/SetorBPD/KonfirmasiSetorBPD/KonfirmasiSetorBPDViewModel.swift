@@ -64,6 +64,7 @@ class KonfirmasiSetorBPDViewModel : ObservableObject {
                     if rc == "00" {
                         self.showToastResponse = true
                         self.alertMessage = rm!
+                        NotificationManager.pushNotification(title: "Setor tunai berhasil", body: "Tekan untuk melihat transaksi di kotak masuk")
                         print("asd response \(resjson)")
                     } else {
                         showAlert = true

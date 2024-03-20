@@ -15,6 +15,8 @@ struct lakupandaiApp: App {
     var body: some Scene {
         WindowGroup {
             StartView()
+//            BluetoothView()
+//            Blutut()
                 .preferredColorScheme(.light)
                 .onAppear{
                     UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in

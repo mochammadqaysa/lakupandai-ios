@@ -11,7 +11,7 @@ import AlertToast
 struct KonfirmasiPembayaranView: View {
     
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var konfirmasiPembayaranVM = KonfirmasiPembayaranViewModel()
+    @StateObject var konfirmasiPembayaranVM = KonfirmasiPembayaranViewModel()
     let dataPembayaran : [ItemValue]
     let dataForm : [String : Any]
     let dataToken : String

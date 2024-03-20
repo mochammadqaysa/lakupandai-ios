@@ -65,6 +65,8 @@ class KonfirmasiSetorLakupandaiViewModel : ObservableObject {
                         self.showToastResponse = true
                         self.alertMessage = rm!
                         print("asd response \(resjson)")
+                        
+                        NotificationManager.pushNotification(title: "Setor tunai berhasil", body: "Tekan untuk melihat transaksi di kotak masuk")
                     } else {
                         showAlert = true
                         alertMessage = rm!

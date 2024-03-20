@@ -116,6 +116,8 @@ class KonfirmasiPembayaranViewModel : ObservableObject {
                                 for rmDatum in rmData {
                                     dataKonfirmasi.append(ItemValue(jsonDictionary: rmDatum)!)
                                 }
+                                
+                                    print("asd ini data konfirm 2 : \(dataKonfirmasi)")
                                 self.nextStep = true
                                 NotificationManager.pushNotification(title: "Pembayaran \(layanan)", body: "Tekan untuk melihat transaksi di kotak masuk")
                             }

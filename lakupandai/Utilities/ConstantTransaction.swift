@@ -73,7 +73,8 @@ struct ConstantTransaction {
 //    static let URL: String = "https://103.23.175.124:8442/lakupandaidiy/"
     
     //dev DAK
-    static let URL: String = "https://117.54.11.82:10010/lakupandaidiy/"
+//    static let URL: String = "https://103.79.130.194:7818/lakupandaidiy/"
+    static let URL: String = "https://103.79.130.194:10010/lakupandaidiy/"
     
     static let MESSAGE_OK:String = "Ok"
     static let MESSAGE:String = "Pesan"

@@ -11,7 +11,7 @@ import AlertToast
 struct PembayaranView: View {
     
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var pembayaranVM = PembayaranViewModel()
+    @StateObject var pembayaranVM = PembayaranViewModel()
     var body: some View {
         NavigationStack{
             VStack{

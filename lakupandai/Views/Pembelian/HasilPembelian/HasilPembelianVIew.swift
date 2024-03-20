@@ -78,7 +78,7 @@ struct HasilPembelianView: View {
                         }
                         .foregroundColor(.white)
                         Spacer()
-                        Text("PEMBAYARAN")
+                        Text("PEMBELIAN")
                             .font(.subheadline)
                             .fontWeight(.bold)
                         Spacer()

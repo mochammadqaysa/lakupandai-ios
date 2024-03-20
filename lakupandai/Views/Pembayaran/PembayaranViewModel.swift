@@ -65,8 +65,9 @@ class PembayaranViewModel : ObservableObject {
     }
     
     func initLayanan(layanan: String)  {
+        let msisdn = UserDefaultsManager.shared.getString(forKey: Constant.My_PREF_MSISDN_AGEN)
         let params: [String: Any] = [
-            ConstantTransaction.MSISDN_AGEN_LOGIN: "tonys7777",
+            ConstantTransaction.MSISDN_AGEN_LOGIN: msisdn,
             ConstantTransaction.TIPE: layanan,
             ConstantTransaction.ACTION: ConstantTransaction.ACTION_GET_MENU,
         ]

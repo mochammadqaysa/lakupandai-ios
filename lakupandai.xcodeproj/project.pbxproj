@@ -28,6 +28,7 @@
 		1E5FB8302AF892360002E3D0 /* PembelianViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FB82F2AF892360002E3D0 /* PembelianViewModel.swift */; };
 		1E5FB8332AF8CBFC0002E3D0 /* InformasiRekeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5FB8322AF8CBFC0002E3D0 /* InformasiRekeningView.swift */; };
 		1E5FB83A2AF8CF390002E3D0 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 1E5FB8392AF8CF390002E3D0 /* AlertToast */; };
+		1E6D19782B736B510024A4E5 /* Printer in Frameworks */ = {isa = PBXBuildFile; productRef = 1E6D19772B736B510024A4E5 /* Printer */; };
 		1E7BB58A2B34ABBC00B5DD89 /* KonfirmasiPembelianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BB5892B34ABBC00B5DD89 /* KonfirmasiPembelianView.swift */; };
 		1E7BB58C2B34ABCA00B5DD89 /* KonfirmasiPembelianViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BB58B2B34ABCA00B5DD89 /* KonfirmasiPembelianViewModel.swift */; };
 		1E7BB5912B35303100B5DD89 /* HasilPembelianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BB5902B35303100B5DD89 /* HasilPembelianView.swift */; };
@@ -109,6 +110,11 @@
 		1E9AF03E2B45764C006866EB /* MutasiRekening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF03D2B45764C006866EB /* MutasiRekening.swift */; };
 		1E9AF0412B46468F006866EB /* DetailMutasiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF0402B46468F006866EB /* DetailMutasiView.swift */; };
 		1E9AF0432B4646A4006866EB /* DetailMutasiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF0422B4646A4006866EB /* DetailMutasiViewModel.swift */; };
+		1EAAD4AC2B738A2F003F199D /* BluetoothKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1EAAD4AB2B738A2F003F199D /* BluetoothKit */; };
+		1EAAD4AE2B752B20003F199D /* BluetoothViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAAD4AD2B752B1F003F199D /* BluetoothViewModel.swift */; };
+		1EAAD4B12B752C11003F199D /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAAD4B02B752C11003F199D /* BluetoothView.swift */; };
+		1EAAD4B32B7B19B2003F199D /* Blutut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAAD4B22B7B19B2003F199D /* Blutut.swift */; };
+		1EAAD4B52B7B2298003F199D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAAD4B42B7B2298003F199D /* BluetoothManager.swift */; };
 		1EBE05252B5D97D5001A62FF /* KonfirmasiTransferBPDDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE05242B5D97D5001A62FF /* KonfirmasiTransferBPDDetailView.swift */; };
 		1EBE05272B5D97E2001A62FF /* KonfirmasiTransferBPDDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE05262B5D97E2001A62FF /* KonfirmasiTransferBPDDetailViewModel.swift */; };
 		1EBE052A2B5D9800001A62FF /* HasilTransferBPDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE05292B5D9800001A62FF /* HasilTransferBPDView.swift */; };
@@ -131,6 +137,8 @@
 		1EEEE4282B281820004189AB /* HasilPembayaranViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEE4272B281820004189AB /* HasilPembayaranViewModel.swift */; };
 		1EF911EA2B71518D00D73AC2 /* ResponseAktivasiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF911E92B71518D00D73AC2 /* ResponseAktivasiView.swift */; };
 		1EF911EC2B71519800D73AC2 /* ResponseAktivasiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF911EB2B71519800D73AC2 /* ResponseAktivasiViewModel.swift */; };
+		1EF911EE2B731ACC00D73AC2 /* RowNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF911ED2B731ACC00D73AC2 /* RowNotification.swift */; };
+		1EF911F02B731F5500D73AC2 /* Notifikasi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF911EF2B731F5500D73AC2 /* Notifikasi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +161,7 @@
 		1E5FB82D2AF891950002E3D0 /* PembelianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembelianView.swift; sourceTree = "<group>"; };
 		1E5FB82F2AF892360002E3D0 /* PembelianViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PembelianViewModel.swift; sourceTree = "<group>"; };
 		1E5FB8322AF8CBFC0002E3D0 /* InformasiRekeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformasiRekeningView.swift; sourceTree = "<group>"; };
+		1E6D197B2B7389DF0024A4E5 /* BluetoothKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BluetoothKit; sourceTree = "<group>"; };
 		1E7BB5892B34ABBC00B5DD89 /* KonfirmasiPembelianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonfirmasiPembelianView.swift; sourceTree = "<group>"; };
 		1E7BB58B2B34ABCA00B5DD89 /* KonfirmasiPembelianViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonfirmasiPembelianViewModel.swift; sourceTree = "<group>"; };
 		1E7BB5902B35303100B5DD89 /* HasilPembelianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasilPembelianView.swift; sourceTree = "<group>"; };
@@ -234,6 +243,11 @@
 		1E9AF03D2B45764C006866EB /* MutasiRekening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutasiRekening.swift; sourceTree = "<group>"; };
 		1E9AF0402B46468F006866EB /* DetailMutasiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMutasiView.swift; sourceTree = "<group>"; };
 		1E9AF0422B4646A4006866EB /* DetailMutasiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMutasiViewModel.swift; sourceTree = "<group>"; };
+		1EAAD4AD2B752B1F003F199D /* BluetoothViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewModel.swift; sourceTree = "<group>"; };
+		1EAAD4AF2B752B47003F199D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1EAAD4B02B752C11003F199D /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
+		1EAAD4B22B7B19B2003F199D /* Blutut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blutut.swift; sourceTree = "<group>"; };
+		1EAAD4B42B7B2298003F199D /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		1EBE05242B5D97D5001A62FF /* KonfirmasiTransferBPDDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonfirmasiTransferBPDDetailView.swift; sourceTree = "<group>"; };
 		1EBE05262B5D97E2001A62FF /* KonfirmasiTransferBPDDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonfirmasiTransferBPDDetailViewModel.swift; sourceTree = "<group>"; };
 		1EBE05292B5D9800001A62FF /* HasilTransferBPDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasilTransferBPDView.swift; sourceTree = "<group>"; };
@@ -248,6 +262,17 @@
 		1EBE05422B6109A1001A62FF /* KonfirmasiTransferBankDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonfirmasiTransferBankDetailView.swift; sourceTree = "<group>"; };
 		1EBE05442B6109AE001A62FF /* KonfirmasiTransferBankDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonfirmasiTransferBankDetailViewModel.swift; sourceTree = "<group>"; };
 		1EBE05472B6109C5001A62FF /* HasilTransferBankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasilTransferBankView.swift; sourceTree = "<group>"; };
+		1EEBD7B22B735DEE009D1FFD /* Printer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Printer; sourceTree = "<group>"; };
+		1EEBD7B32B735E28009D1FFD /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = Printer/Package.swift; sourceTree = "<group>"; };
+		1EEBD7B42B735E60009D1FFD /* Printer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Printer; sourceTree = "<group>"; };
+		1EEBD7B52B7366E2009D1FFD /* Printer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Printer; sourceTree = "<group>"; };
+		1EEBD7B62B7366FD009D1FFD /* Printer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Printer; sourceTree = "<group>"; };
+		1EEBD7B72B73676D009D1FFD /* Printer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Printer; sourceTree = "<group>"; };
+		1EEBD7B82B736788009D1FFD /* Printer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Printer; sourceTree = "<group>"; };
+		1EEBD7BD2B7368FA009D1FFD /* Printer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Printer; sourceTree = "<group>"; };
+		1EEBD7BE2B736902009D1FFD /* Printer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Printer; sourceTree = "<group>"; };
+		1EEBD7BF2B736965009D1FFD /* Printer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Printer; sourceTree = "<group>"; };
+		1EEBD7C02B736A8C009D1FFD /* Printer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Printer; sourceTree = "<group>"; };
 		1EEEE4182B206C66004189AB /* KonfirmasiPembayaranViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonfirmasiPembayaranViewModel.swift; sourceTree = "<group>"; };
 		1EEEE41E2B2179BC004189AB /* ItemValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemValue.swift; sourceTree = "<group>"; };
 		1EEEE4202B27913C004189AB /* AppDelegateNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateNotifications.swift; sourceTree = "<group>"; };
@@ -256,6 +281,8 @@
 		1EEEE4272B281820004189AB /* HasilPembayaranViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasilPembayaranViewModel.swift; sourceTree = "<group>"; };
 		1EF911E92B71518D00D73AC2 /* ResponseAktivasiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAktivasiView.swift; sourceTree = "<group>"; };
 		1EF911EB2B71519800D73AC2 /* ResponseAktivasiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAktivasiViewModel.swift; sourceTree = "<group>"; };
+		1EF911ED2B731ACC00D73AC2 /* RowNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowNotification.swift; sourceTree = "<group>"; };
+		1EF911EF2B731F5500D73AC2 /* Notifikasi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifikasi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +293,8 @@
 				1E1045B32B4725BF0079E18C /* UIScrollView_InfiniteScroll in Frameworks */,
 				1E9AF03A2B45018D006866EB /* MultiDatePicker in Frameworks */,
 				1E5FB83A2AF8CF390002E3D0 /* AlertToast in Frameworks */,
+				1E6D19782B736B510024A4E5 /* Printer in Frameworks */,
+				1EAAD4AC2B738A2F003F199D /* BluetoothKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +308,7 @@
 				1E0AFFD82AD8211F005ED146 /* NotificationViewModel.swift */,
 				1E0AFFDA2AD8230E005ED146 /* NotificationDetailView.swift */,
 				1E0AFFDC2AD82321005ED146 /* NotificationDetailViewModel.swift */,
+				1EF911ED2B731ACC00D73AC2 /* RowNotification.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -633,8 +663,12 @@
 		1E847AE02ACCF8280010CBAC = {
 			isa = PBXGroup;
 			children = (
+				1EEBD7B12B735DEE009D1FFD /* Packages */,
 				1E847AEB2ACCF8280010CBAC /* lakupandai */,
 				1E847AEA2ACCF8280010CBAC /* Products */,
+				1EEBD7BF2B736965009D1FFD /* Printer */,
+				1E6D197B2B7389DF0024A4E5 /* BluetoothKit */,
+				20F2DDBAB0980895804B28D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -649,6 +683,7 @@
 		1E847AEB2ACCF8280010CBAC /* lakupandai */ = {
 			isa = PBXGroup;
 			children = (
+				1EAAD4AF2B752B47003F199D /* Info.plist */,
 				1EEEE41D2B2179A7004189AB /* Classes */,
 				1E847B132ACE50120010CBAC /* Helper */,
 				1E847B062ACD15540010CBAC /* Views */,
@@ -681,6 +716,8 @@
 				1E93C39E2B200E510082D49F /* ImageCache.swift */,
 				1EEEE4202B27913C004189AB /* AppDelegateNotifications.swift */,
 				1EEEE4222B279C90004189AB /* NotificationManager.swift */,
+				1EAAD4AD2B752B1F003F199D /* BluetoothViewModel.swift */,
+				1EAAD4B42B7B2298003F199D /* BluetoothManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -720,6 +757,8 @@
 				1E7BB59D2B3B442D00B5DD89 /* OTPTextField.swift */,
 				1E7BB59F2B3B6F6400B5DD89 /* PasscodeField.swift */,
 				1E9AF03B2B4568CA006866EB /* Spinner.swift */,
+				1EAAD4B02B752C11003F199D /* BluetoothView.swift */,
+				1EAAD4B22B7B19B2003F199D /* Blutut.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -876,12 +915,29 @@
 			path = HasilTransferBank;
 			sourceTree = "<group>";
 		};
+		1EEBD7B12B735DEE009D1FFD /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1EEBD7B22B735DEE009D1FFD /* Printer */,
+				1EEBD7B42B735E60009D1FFD /* Printer */,
+				1EEBD7B52B7366E2009D1FFD /* Printer */,
+				1EEBD7B62B7366FD009D1FFD /* Printer */,
+				1EEBD7B72B73676D009D1FFD /* Printer */,
+				1EEBD7B82B736788009D1FFD /* Printer */,
+				1EEBD7BD2B7368FA009D1FFD /* Printer */,
+				1EEBD7BE2B736902009D1FFD /* Printer */,
+				1EEBD7C02B736A8C009D1FFD /* Printer */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		1EEEE41D2B2179A7004189AB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				1EEEE41E2B2179BC004189AB /* ItemValue.swift */,
 				1E9AF03D2B45764C006866EB /* MutasiRekening.swift */,
 				1EBE05392B5F945C001A62FF /* Bank.swift */,
+				1EF911EF2B731F5500D73AC2 /* Notifikasi.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -904,6 +960,14 @@
 			path = ResponseAktivasi;
 			sourceTree = "<group>";
 		};
+		20F2DDBAB0980895804B28D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EEBD7B32B735E28009D1FFD /* Package.swift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -924,6 +988,8 @@
 				1E5FB8392AF8CF390002E3D0 /* AlertToast */,
 				1E9AF0392B45018D006866EB /* MultiDatePicker */,
 				1E1045B22B4725BF0079E18C /* UIScrollView_InfiniteScroll */,
+				1E6D19772B736B510024A4E5 /* Printer */,
+				1EAAD4AB2B738A2F003F199D /* BluetoothKit */,
 			);
 			productName = lakupandai;
 			productReference = 1E847AE92ACCF8280010CBAC /* lakupandai.app */;
@@ -996,12 +1062,14 @@
 				1EBE05452B6109AE001A62FF /* KonfirmasiTransferBankDetailViewModel.swift in Sources */,
 				1E87B41A2B5793B800A3E6D6 /* HasilTarikTunaiTanpaKartuViewModel.swift in Sources */,
 				1E847B1A2ACEB3C30010CBAC /* DrawerViewModel.swift in Sources */,
+				1EAAD4AE2B752B20003F199D /* BluetoothViewModel.swift in Sources */,
 				1E7BB5BA2B3BF5A300B5DD89 /* SetorLakupandaiViewModel.swift in Sources */,
 				1EEEE4282B281820004189AB /* HasilPembayaranViewModel.swift in Sources */,
 				1E87B4212B58642F00A3E6D6 /* KonfirmasiRequestTransferBPDView.swift in Sources */,
 				1E7BB5CD2B3CE30400B5DD89 /* KonfirmasiTarikTunaiView.swift in Sources */,
 				1E93C3A22B206A6E0082D49F /* KonfirmasiPembayaranView.swift in Sources */,
 				1E7BB5A32B3B71CE00B5DD89 /* IfViewModifier.swift in Sources */,
+				1EAAD4B12B752C11003F199D /* BluetoothView.swift in Sources */,
 				1E7BB5EF2B3D093800B5DD89 /* KonfirmasiTransferBPDView.swift in Sources */,
 				1E7BB5932B35304700B5DD89 /* HasilPembelianViewModel.swift in Sources */,
 				1E7BB5912B35303100B5DD89 /* HasilPembelianView.swift in Sources */,
@@ -1021,8 +1089,10 @@
 				1E0AFFD92AD8211F005ED146 /* NotificationViewModel.swift in Sources */,
 				1EBE05482B6109C5001A62FF /* HasilTransferBankView.swift in Sources */,
 				1E7BB5E72B3D03B300B5DD89 /* KonfirmasiTransferBankView.swift in Sources */,
+				1EAAD4B52B7B2298003F199D /* BluetoothManager.swift in Sources */,
 				1E5FB82E2AF891950002E3D0 /* PembelianView.swift in Sources */,
 				1E7BB5FD2B3D0CBA00B5DD89 /* RequestTransferLakupandaiView.swift in Sources */,
+				1EF911EE2B731ACC00D73AC2 /* RowNotification.swift in Sources */,
 				1E0AFFD72AD82112005ED146 /* NotificationView.swift in Sources */,
 				1EEEE4192B206C66004189AB /* KonfirmasiPembayaranViewModel.swift in Sources */,
 				1E847B122ACE4F480010CBAC /* ImageSlider.swift in Sources */,
@@ -1079,6 +1149,7 @@
 				1EBE05362B5EF59C001A62FF /* KonfirmasiTransferLakupandaiDetailViewModel.swift in Sources */,
 				1E9AF0412B46468F006866EB /* DetailMutasiView.swift in Sources */,
 				1E7BB5CF2B3CE31600B5DD89 /* KonfirmasiTarikTunaiViewModel.swift in Sources */,
+				1EF911F02B731F5500D73AC2 /* Notifikasi.swift in Sources */,
 				1E7BB5A52B3B8F6700B5DD89 /* CekSaldoNasabahView.swift in Sources */,
 				1E7BB5A72B3B8F7500B5DD89 /* CekSaldoNasabahViewModel.swift in Sources */,
 				1E7BB5DB2B3CF26800B5DD89 /* MenuTransferBPD.swift in Sources */,
@@ -1087,6 +1158,7 @@
 				1E7BB5EB2B3D03D000B5DD89 /* RequestTransferBankView.swift in Sources */,
 				1E7BB5972B3B3E2A00B5DD89 /* CekSaldoAgenView.swift in Sources */,
 				1EBE053A2B5F945C001A62FF /* Bank.swift in Sources */,
+				1EAAD4B32B7B19B2003F199D /* Blutut.swift in Sources */,
 				1E93C3972B1FBA090082D49F /* LoginView.swift in Sources */,
 				1E7BB5FF2B3D0CC600B5DD89 /* RequestTransferLakupandaiViewModel.swift in Sources */,
 				1E5FB8282AF884420002E3D0 /* PembayaranView.swift in Sources */,
@@ -1234,7 +1306,10 @@
 				DEVELOPMENT_TEAM = HH84WM9NY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = lakupandai/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "BPDDIY Agen";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow to use bluetooth";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Please allow using bluetooth for discovering peripherals";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1266,7 +1341,10 @@
 				DEVELOPMENT_TEAM = HH84WM9NY8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = lakupandai/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "BPDDIY Agen";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow to use bluetooth";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Please allow using bluetooth for discovering peripherals";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1348,10 +1426,18 @@
 			package = 1E5FB8382AF8CF390002E3D0 /* XCRemoteSwiftPackageReference "AlertToast" */;
 			productName = AlertToast;
 		};
+		1E6D19772B736B510024A4E5 /* Printer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Printer;
+		};
 		1E9AF0392B45018D006866EB /* MultiDatePicker */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1E9AF0382B45018D006866EB /* XCRemoteSwiftPackageReference "MultiDatePicker" */;
 			productName = MultiDatePicker;
+		};
+		1EAAD4AB2B738A2F003F199D /* BluetoothKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BluetoothKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

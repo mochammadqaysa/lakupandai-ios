@@ -77,6 +77,8 @@ class CekStatusTerakhirViewModel : ObservableObject {
                                         dataResponse.append(dataSaldo)
                                         if dataSaldo.header == "Layanan" {
                                             self.layanan = dataSaldo.value
+                                        } else {
+                                            self.dataStatus.append(dataSaldo)
                                         }
                                     }
                                     let dataResi = dataResponse.first(where: { find in

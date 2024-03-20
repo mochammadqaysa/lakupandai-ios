@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct NotificationView: View {
     
@@ -14,68 +15,55 @@ struct NotificationView: View {
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         NavigationStack{
-            List{
-                VStack(alignment: .center){
-                    HStack{
-                        Circle()
-                            .frame(width: 10, height: 10)
-                            .foregroundColor(Color("colorDarkBlue"))
-                        Text("Telkomsel Prepaid")
-                        Spacer()
-                        Text("(D) Rp. 53.000")
-                    }
-                    HStack{
-                        Circle()
-                            .frame(width: 10, height: 10)
-                            .foregroundColor(Color("colorAccent"))
-                        Text("02-11-2022")
-                        Spacer()
-                        Text("Resi. 2022112344353")
+            ZStack {
+                Image("bg")
+                    .resizable()
+                    .ignoresSafeArea()
+                ScrollView {
+                    VStack{}.padding(.top,15)
+                    LazyVStack {
+                        ForEach(Array(notificationVM.dataNotif.enumerated()), id: \.element.id) { index, item in
+                            NavigationLink(destination: NotificationDetailView(idNotif: item.id_notif, layanan: item.layanan)) {
+                                RowNotification(notif: item)
+                                    .foregroundColor(.black)
+                            }
+                            
+                        }
                     }
                 }
-                .onTapGesture {
-                    notificationVM.showNotificationDetail.toggle()
-                }
-                .fullScreenCover(isPresented: $notificationVM.showNotificationDetail){
-                    NotificationDetailView()
-                }
-                VStack(alignment: .center){
-                    HStack{
-                        Circle()
-                            .frame(width: 10, height: 10)
-                            .foregroundColor(Color("colorAccent"))
-                        Text("Telkomsel Prepaid")
-                        Spacer()
-                        Text("(D) Rp. 53.000")
+            }
+            .alert(isPresented: $notificationVM.showAlert){
+                Alert(
+                    title: Text("Peringatan"),
+                    message: Text(notificationVM.alertMessage),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
+            .alert("Peringatan", isPresented: $notificationVM.showAlert) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text(notificationVM.alertMessage)
+            }
+            .alert(isPresented: $notificationVM.showToastResponse) {
+                Alert(
+                    title: Text("INFORMASI"),
+                    message: Text(notificationVM.alertMessage),
+                    dismissButton: .default(Text("OK")) {
+                        presentationMode.wrappedValue.dismiss()
+                        presentationMode.wrappedValue.dismiss()
                     }
-                    HStack{
-                        Circle()
-                            .frame(width: 10, height: 10)
-                            .foregroundColor(Color("colorAccent"))
-                        Text("02-11-2022")
-                        Spacer()
-                        Text("Resi. 2022112344353")
-                    }
+                )
+            }
+            .alert("INFORMASI", isPresented: $notificationVM.showToastResponse) {
+                Button("OK", role: .cancel) {
+                    presentationMode.wrappedValue.dismiss()
+                    presentationMode.wrappedValue.dismiss()
                 }
-                VStack(alignment: .center){
-                    HStack{
-                        Circle()
-                            .frame(width: 10, height: 10)
-                            .foregroundColor(Color("colorAccent"))
-                        Text("Telkomsel Prepaid")
-                        Spacer()
-                        Text("(D) Rp. 53.000")
-                    }
-                    HStack{
-                        Circle()
-                            .frame(width: 10, height: 10)
-                            .foregroundColor(Color("colorAccent"))
-                        Text("02-11-2022")
-                        Spacer()
-                        Text("Resi. 2022112344353")
-                    }
-                }
-                
+            } message: {
+                Text(notificationVM.alertMessage)
+            }
+            .toast(isPresenting: $notificationVM.isLoading) {
+                AlertToast(displayMode: .alert, type: .loading, title: "Loading", subTitle: "Please Wait...", style: .style(backgroundColor: .gray, titleColor: .white, subTitleColor: .white))
             }
             .toolbar {
                 ToolbarItemGroup(placement: .principal) {

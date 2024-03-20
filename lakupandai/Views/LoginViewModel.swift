@@ -137,8 +137,9 @@ class LoginViewModel : ObservableObject {
     }
     
     func doInit(){
+        let msisdn = UserDefaultsManager.shared.getString(forKey: Constant.My_PREF_MSISDN_AGEN)
         let params: [String: Any] = [
-            ConstantTransaction.MSISDN_AGEN_LOGIN: "tonys7777",
+            ConstantTransaction.MSISDN_AGEN_LOGIN: msisdn,
             ConstantTransaction.ACTION: ConstantTransaction.ACTION_INIT,
             "info": "getImage",
         ]

@@ -12,7 +12,7 @@ struct KonfirmasiTarikTunaiDetailView: View {
     let dataTarik : [ItemValue]
     let tokenNasabah : String
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var konfirmasiTarikTunaiDetailVM = KonfirmasiTarikTunaiDetailViewModel()
+    @StateObject var konfirmasiTarikTunaiDetailVM = KonfirmasiTarikTunaiDetailViewModel()
     
     var body: some View {
         NavigationStack {
